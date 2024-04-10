@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+  
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: lightcyan;
+  padding: 0.1px;
+}
+#nav {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  /* background: red; */
+  align-items: center;
+  justify-content: space-between;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  margin-top: 5vh;
+}
+
+#nav h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 3px solid black;
+  height: 100%;
+  width: 22%;
+  /* background:yellow; */
+  font-size: 25px;
+  font-weight: 600;
+}
+#nav h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-right: 3px solid black; */
+  height: 100%;
+  width: 20%;
+  /* background:yellow; */
+  font-style: italic;
+  font-size: 40px;
+}
+#nav h2:nth-last-child(1) {
+  width: 10%;
+}
+#center {
+  height: 80vh;
+  width: 100%;
+  /* background: red; */
+  padding: 3vw;
+  position: relative;
+}
+#content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* background: blue; */
+}
+#content video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#overlay {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  /* background: red; */
+  bottom: 0;
+  padding: 5vh;
+  color: white;
+}
+#over1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5vh;
+}
+#over1 h1 {
+  font-size: 40px;
+  font-weight: 600;
+  mix-blend-mode: difference;
+}
+#over1 h2 {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 2vh 2vw;
+  border: 2px solid white;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  font-family:"montserrat" ;
+}
+
+#over2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 3px solid white;
+}
+#over2 h4 {
+  font-size: 25px;
+  font-weight: 600;
+  mix-blend-mode: difference;
+  padding-top: 5vh;
+}
+#over2 img {
+  width: 4%;
+  height: 4%;
+mix-blend-mode: difference;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#scroll{
+    height: 40vh;
+    width: 100%;
+    /* background: red; */
+    white-space: nowrap;
+    overflow-x: hidden ;
+    overflow-y: hidden;
+    background: lightcyan;
+}
+#container{
+    padding: 2vw;
+    display: inline-block;
+    height: 100%;
+    width: 110%;  
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#scroll img{
+    
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 14%;
+    object-position: 30% 30%;
+    margin: 1vw;
+}
+
+@keyframes anime {
+    from {
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+#alphabet{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top:  3px solid black;
+    border-bottom:  3px solid black;
+    height: 10vh;
+    gap: 1vw;
+    width: 100%;
+}
+
+#alphabet h5{
+    font-size: 2vw;
+    font-weight: 600;
+    font-family: "montserrat";
+    cursor: pointer;
+    font-style: italic;
+    border-bottom: 2px solid black;
+    letter-spacing: 2px;
+}
+#alphabet h6{
+
+    font-size: 1vw;
+    font-weight: 600;
+    /* background: yellowgreen; */
+    font-family: "montserrat";
+    padding: 0.6vw 0.8vw;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: all ease 0.3s;
+    border-radius: 50%;
+}
+#page2{
+    height:     100vh;
+    width:  100%;
+
+}
+#alphabet h6:hover{
+    background: black;
+    color: white;
+    border: 2px solid black;
+}
